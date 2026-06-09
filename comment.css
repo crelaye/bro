@@ -1,0 +1,190 @@
+/* TESTIMONIAL SECTION */
+
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.testimonial-section{
+  padding:120px 8%;
+  background:#081120;
+}
+
+/* HEADER */
+
+.testimonial-header{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.testimonial-header h2{
+  font-size:4rem;
+  margin:20px 0;
+  color:white;
+}
+
+.testimonial-header p{
+  color:#cfd3dc;
+  max-width:700px;
+  margin:auto;
+  line-height:1.8;
+}
+
+/* COMMENT BOX */
+
+.comment-box{
+  max-width:900px;
+
+  margin:0 auto 60px;
+
+  display:flex;
+
+  align-items:center;
+
+  gap:20px;
+}
+
+.comment-box textarea{
+  flex:1;
+
+  height:140px;
+
+  resize:none;
+
+  border:none;
+
+  outline:none;
+
+  padding:25px;
+
+  border-radius:25px;
+
+  background:
+  rgba(255,255,255,0.05);
+
+  color:white;
+
+  font-size:1rem;
+
+  line-height:1.7;
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+}
+
+.comment-box textarea::placeholder{
+  color:#aaa;
+}
+
+/* SUBMIT BUTTON */
+
+.comment-box button{
+  width:70px;
+  height:70px;
+
+  border:none;
+
+  border-radius:50%;
+
+  background:#00d2ff;
+
+  color:black;
+
+  font-size:1.3rem;
+
+  cursor:pointer;
+
+  transition:0.3s ease;
+
+  flex-shrink:0;
+}
+
+.comment-box button:hover{
+  transform:scale(1.1);
+}
+
+/* COMMENTS */
+
+.comments-container{
+  display:grid;
+
+  grid-template-columns:
+  repeat(2,1fr);
+
+  gap:30px;
+}
+
+/* COMMENT CARD */
+
+.comment-card{
+  background:
+  rgba(255,255,255,0.04);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  padding:30px;
+
+  border-radius:30px;
+
+  transition:0.3s ease;
+}
+
+.comment-card:hover{
+  transform:translateY(-6px);
+
+  border-color:#00d2ff;
+}
+
+.comment-top{
+  margin-bottom:20px;
+}
+
+.comment-top h3{
+  color:white;
+  margin-bottom:5px;
+}
+
+.comment-top span{
+  color:#00d2ff;
+  font-size:0.9rem;
+}
+
+.comment-card p{
+  color:#cfd3dc;
+  line-height:1.8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+  .comments-container{
+    grid-template-columns:1fr;
+  }
+
+  .testimonial-header h2{
+    font-size:2.8rem;
+  }
+
+  .comment-box{
+    flex-direction:column;
+  }
+
+  .comment-box button{
+    width:100%;
+    border-radius:20px;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .testimonial-section{
+    padding:90px 5%;
+  }
+
+  .testimonial-header h2{
+    font-size:2.2rem;
+  }
+
+}

@@ -1,0 +1,143 @@
+/* SOCIAL SECTION */
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.social-section{
+  padding:120px 8%;
+  background:#081120;
+}
+
+/* HEADER */
+
+.social-header{
+  text-align:center;
+  margin-bottom:70px;
+}
+
+.social-header h2{
+  font-size:4rem;
+  line-height:1.2;
+  color:white;
+  margin:20px 0;
+}
+
+.social-header p{
+  max-width:750px;
+  margin:auto;
+
+  color:#cfd3dc;
+
+  line-height:1.8;
+
+  font-size:1.05rem;
+}
+
+/* SOCIAL CONTAINER */
+
+.social-container{
+  display:grid;
+
+  grid-template-columns:
+  repeat(5,1fr);
+
+  gap:25px;
+}
+
+/* CARD */
+
+.social-card{
+  background:
+  rgba(255,255,255,0.04);
+
+  border:
+  1px solid rgba(255,255,255,0.08);
+
+  border-radius:30px;
+
+  padding:40px 25px;
+
+  text-align:center;
+
+  text-decoration:none;
+
+  transition:0.4s ease;
+
+  color:white;
+}
+
+.social-card:hover{
+  transform:
+  translateY(-10px);
+
+  border-color:#00d2ff;
+
+  background:
+  rgba(0,210,255,0.08);
+}
+
+/* ICON */
+
+.social-card i{
+  font-size:3rem;
+
+  color:#00d2ff;
+
+  margin-bottom:25px;
+}
+
+/* TEXT */
+
+.social-card h3{
+  font-size:1.4rem;
+
+  margin-bottom:12px;
+}
+
+.social-card span{
+  color:#cfd3dc;
+
+  line-height:1.7;
+
+  font-size:0.95rem;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1200px){
+
+  .social-container{
+    grid-template-columns:
+    repeat(3,1fr);
+  }
+
+}
+
+@media(max-width:768px){
+
+  .social-container{
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+
+  .social-header h2{
+    font-size:2.8rem;
+  }
+
+}
+
+@media(max-width:600px){
+
+  .social-section{
+    padding:90px 5%;
+  }
+
+  .social-container{
+    grid-template-columns:1fr;
+  }
+
+  .social-header h2{
+    font-size:2.2rem;
+  }
+
+}
